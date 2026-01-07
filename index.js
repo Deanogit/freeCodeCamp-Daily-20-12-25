@@ -31,10 +31,10 @@ function purgeMostFrequent(arr) {
 
   // purge
   // filter original array
-  const purge = arr.filter((a) => a < most);
+  const purge = arr.filter((item) => freq[item] !== most);
   console.log(purge);
   // inside filter check frequency map for the current element
   // if frequency is less than max frequency, keep it!
 
-  return arr;
+  return purge;
 }
