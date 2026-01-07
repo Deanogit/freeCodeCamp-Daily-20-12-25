@@ -1,10 +1,10 @@
 ## Purge most frequent
 
-This algorithm indentifies the "most popular" elements in a dataset and removes them entirely, handling ties for the highest frequency.
+This algorithm identifies the "most popular" elements in a dataset and removes them entirely, handling ties for the highest frequency.
 
 ### The challenge
 
-Given an array, remove all occurences of the element(s) that appear most often while preserving the original order of the remaining elements.
+Given an array, remove all occurrences of the element(s) that appear most often while preserving the original order of the remaining elements.
 
 ### Technical Strategy: The Two-Pass Approach
 
@@ -16,7 +16,7 @@ Given an array, remove all occurences of the element(s) that appear most often w
 
 ### Key Code Snippet
 
-```
+```JavaScript
 // Step 1: Frequency Map
 const freq = {};
 arr.forEach(item => freq[item] = (freq[item] || 0) + 1);
